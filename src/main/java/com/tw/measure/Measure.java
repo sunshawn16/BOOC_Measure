@@ -12,9 +12,17 @@ public class Measure {
         this.value = value;
     }
 
-    public static Measure createMeasure(Unit unit, double value) {
 
-        return new Measure(unit, value * unit.getRate());
+    public static Measure createInch(Unit inch, double value) {
+        return new Measure(inch, value * inch.getRate());
+    }
+
+    public static Measure createFect(Unit fect, double value) {
+        return new Measure(fect, value * fect.getRate());
+    }
+
+    public static Measure creatYard(Unit yard, double value) {
+        return new Measure(yard, value * yard.getRate());
     }
 
     @Override
